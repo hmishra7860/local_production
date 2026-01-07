@@ -1,8 +1,11 @@
 import os
 FILEPATH = "to_do_s.txt"
 
+<<<<<<< HEAD
 #test_commit
 
+=======
+>>>>>>> 9e5027626278ef237e5487e0e8c279bf2e9c4bc4
 if not os.path.exists(FILEPATH):
     with open(FILEPATH, 'w') as f:
         f.write("New File Created.\n")

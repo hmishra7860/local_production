@@ -1,0 +1,93 @@
+/* ===== CSS STRUCTURE ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f2f4f7;
+}
+
+/* Header & Footer */
+#header, #footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#header { top: 0; }
+#footer { bottom: 0; }
+
+/* Task Container (Box Model + Positioning) */
+#taskContainer {
+  width: 400px;
+  margin: 100px auto; /* center horizontally */
+  background: #fff;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Input and Button */
+#taskInput {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+#addBtn {
+  padding: 8px 12px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addBtn:hover {
+  background: #219150;
+}
+
+/* Task List */
+#taskList {
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+}
+
+/* Task Items (Class Selector) */
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ecf0f1;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+/* Delete Button */
+.deleteBtn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  background: #c0392b;
+}

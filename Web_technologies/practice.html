@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML Concepts Example Page">
+  <meta name="keywords" content="HTML, Tables, Forms, Audio, Video">
+  <meta name="author" content="Ritik Mishra">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Concepts Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background-color: #333; color: white; text-align: center; padding: 15px; }
+    nav { background: #444; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 10px; text-decoration: none; }
+    main { padding: 20px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 15px; }
+    th, td { border: 1px solid black; padding: 8px; text-align: center; }
+    .highlight { color: red; font-weight: bold; }
+    form { background: #f2f2f2; padding: 15px; border-radius: 8px; width: 50%; margin: auto; }
+    input, select { margin: 5px 0; padding: 8px; width: 95%; }
+    input[type="submit"] { background: green; color: white; cursor: pointer; border: none; }
+    input[type="submit"]:hover { background: darkgreen; }
+  </style>
+</head>
+<body>
+
+  <!-- Semantic Header -->
+  <header>
+    <h1>Welcome to Ritik's HTML Demo</h1>
+    <p>Learning all important HTML concepts in one page 🚀</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#table">Table</a>
+    <a href="#media">Audio/Video</a>
+    <a href="#form">Form</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Section with Table -->
+    <section id="table">
+      <h2>Student Information Table</h2>
+      <div>
+        <p>Here is a <span class="highlight">sample table</span> of students:</p>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+          </tr>
+          <tr>
+            <td>Ritik</td>
+            <td>23</td>
+            <td>Lucknow</td>
+          </tr>
+          <tr>
+            <td>Aditi</td>
+            <td>21</td>
+            <td>Delhi</td>
+          </tr>
+          <tr>
+            <td>Rohan</td>
+            <td>25</td>
+            <td>Mumbai</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section with Audio and Video -->
+    <section id="media">
+      <h2>Media Section</h2>
+      <p>Listen to audio or watch video:</p>
+
+      <!-- Audio -->
+      <audio controls>
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+
+      <br><br>
+
+      <!-- Video -->
+      <video width="400" controls>
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+    </section>
+
+    <!-- Section with Form -->
+    <section id="form">
+      <h2>Registration Form</h2>
+      <form action="/submit" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+
+        <label for="file">Upload Resume:</label>
+        <input type="file" id="file" name="resume">
+
+        <label for="city">Choose City:</label>
+        <select id="city" name="city">
+          <option value="lucknow">Lucknow</option>
+          <option value="delhi">Delhi</option>
+          <option value="mumbai">Mumbai</option>
+        </select>
+
+        <br><br>
+        <input type="checkbox" required> I agree to the terms and conditions
+        <br><br>
+        <input type="submit" value="Register">
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ritik Mishra | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

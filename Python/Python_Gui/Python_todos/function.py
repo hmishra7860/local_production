@@ -1,7 +1,6 @@
 import os
 FILEPATH = "to_do_s.txt"
 
-#textadded
 
 if not os.path.exists(FILEPATH):
     with open(FILEPATH, 'w') as f:
